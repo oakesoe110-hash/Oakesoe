@@ -130,3 +130,64 @@ for(i in numbers){
    }
 } */
 
+ // reduce method
+ /* let numebers = [1, 2, 3, 4, 5];
+   let sum = numebers.reduce((accumulator, currentValue) => {
+      return accumulator + currentValue;
+   });
+   console.log(sum); */
+
+// Object
+/* let Objects = {
+   name: "oakesoe",
+   age:28,
+   city: "Yangon",
+   profession: "Developer" 
+}
+let data = Objects.map((para) => {
+   return Objects.para;
+})
+console.log(data); */
+
+// Conditional Statement
+/* let temp = parseInt(prompt("Enter the temperature in Celsius: "));
+
+if(temp > 27){
+   console.log("It's hot outside");
+}else if (temp > 20){
+   console.log("It's warm outside");
+}else if (temp > 10){
+   console.log("It's cool outside");
+}else {
+   console.log("It's cold outside");
+}   */
+
+//Chellenge for conditinal Statement
+
+let people = [
+  { name: "oake",age: 28,ticket: null, Gender:"M"},
+  {name: "khat",age: 22,ticket: null, Gender:"F"},
+  { name: "soe",age: 30,ticket: null, Gender:"M"},
+  {name: "lwin",age: 25,ticket: null, Gender: "F"},
+  { name: "aung",age: 18,ticket: null, Gender: "M"}];
+
+let people_ticket = people.map((person) => {
+  if (person.age >= 18) {
+    person.ticket = "Adult";
+  } else { 
+    person.ticket = "Child";
+  }
+  return person;
+});
+
+console.table(people_ticket);
+
+
+let gender = people_ticket.map((human) => {
+   if (human.Gender ==="M"){
+      human.Gender = "Male";
+   } else human.Gender = "Female";
+   return human;
+})
+
+console.table(gender);
