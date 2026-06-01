@@ -36,23 +36,36 @@ else:
 # }
 
 # print(dic.get("name"))
-from tabulate import tabulate 
-from ast import If
+# from tabulate import tabulate 
+# from ast import If
 
 
-people = [
-   {"name": "Kyaw Kyaw", "age": 28, "ticket": None, "Gender": "M"},
-   {"name": "Aung Aung", "age": 35, "ticket": None, "Gender": "F"},
-   {"name": "Mya Mya", "age": 17, "ticket": None, "Gender": "F"},
-   {"name": "Soe Soe", "age": 30, "ticket": None, "Gender": "M"},
-   {"name": "Aung Aung", "age": 16, "ticket": None, "Gender": "F"}
-]
+# people = [
+#    {"name": "Kyaw Kyaw", "age": 28, "ticket": None, "Gender": "M"},
+#    {"name": "Aung Aung", "age": 35, "ticket": None, "Gender": "F"},
+#    {"name": "Mya Mya", "age": 17, "ticket": None, "Gender": "F"},
+#    {"name": "Soe Soe", "age": 30, "ticket": None, "Gender": "M"},
+#    {"name": "Aung Aung", "age": 16, "ticket": None, "Gender": "F"}
+# ]
 
-data_ticket = [person | {"ticket" : True if person["age"] >=18 else False} for person in people]
-print (data_ticket)
+# data_ticket = [person | {"ticket" : True if person["age"] >=18 else False} for person in people]
+# print (data_ticket)
 
-gender = [human | {"Gender" : "Male" if human["Gender"] == "M" else "Female"} for human in data_ticket]
+# gender = [human | {"Gender" : "Male" if human["Gender"] == "M" else "Female"} for human in data_ticket]
 
-print(tabulate(gender, headers="keys", tablefmt = "grid"))
+# print(tabulate(gender, headers="keys", tablefmt = "grid"))
+
+# import time
 
 
+# for i in range(1,6):
+#    print(".", end="", flush=True)
+#    time.sleep(1)
+
+item_price = [1000, 1500, 2000, 2500,3000, 4500, 5000]
+for i in item_price:
+    if i ==3000:
+       print("It is not for sale")
+       continue
+    else:
+       print(f"The price is {i}")

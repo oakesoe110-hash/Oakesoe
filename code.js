@@ -164,7 +164,7 @@ if(temp > 27){
 
 //Chellenge for conditinal Statement
 
-let people = [
+/* et people = [
   { name: "oake",age: 28,ticket: null, Gender:"M"},
   {name: "khat",age: 22,ticket: null, Gender:"F"},
   { name: "soe",age: 30,ticket: null, Gender:"M"},
@@ -186,8 +186,171 @@ console.table(people_ticket);
 let gender = people_ticket.map((human) => {
    if (human.Gender ==="M"){
       human.Gender = "Male";
-   } else human.Gender = "Female";
+   } else {human.Gender = "Female"};
    return human;
 })
 
-console.table(gender);
+console.table(gender); */
+
+
+// switch statement
+
+/* let color = prompt ("Enter a color; ");
+
+switch (color.toLowerCase()){
+   case "red" : console.log( "The color is red");
+   break;
+   case "blue" : console. log("The color is blue");
+   break;
+   case "green" : console.log(" The color is green");
+   break;
+   default : console.log("The color is not red, blue, or green");
+}
+ */
+//Ternary operator
+/* let age = 19;
+
+if (age >= 18) {
+   console.log ("You can drive");
+}else {
+   console.log("You cannot drive")
+}
+
+
+my_license = age >=18 ? "You can drive" : "You cannot drive";
+console.log ( my_license); */
+
+
+// whilel loop
+/* let i = 0;
+while (i<=10){
+   console.log(i);
+   i++;
+} */
+
+// Do while loop
+/* let j = 0;
+
+do {
+   console.log(j);
+   j++;
+} while (j <= 10); */
+
+
+// for loop 
+/* 
+let data = ["oake", "khat", "soe", "lwin"];
+
+for (let i=0; i <data.length; i++){
+   console.log (data[i]);
+}
+
+//for in loop
+for (i in data){
+   console.log(data[i]);
+}
+
+let i = 0;
+
+console.log("The number is " + i); */
+
+
+/* let item_price = [1000, 1500, 2000, 2500,3000, 4500, 5000];
+
+for (i of item_price){
+   if (i === 3000){
+      console.log("It is not for sale");
+   } else {
+      console.log("The price is " + i);   
+   }
+} */
+
+//letter literal
+/* et person = {
+   name: "oake",
+   brother: "Phoe",
+   sister: "Moe",
+   parents: ["U Aunt", "Daw Ngu"],
+   age : 28
+}
+
+let mydata =`
+<h3> My name is ${person.name} </h3>
+<ul>
+   <li> Father : ${person.parents[0]} </li>
+   <li> Mothehr : ${person.parents[1]} </li>
+   <li> Brother : ${person.brother} </li>
+   <li> Sister : ${person.sister} </li>
+   <li> Age : ${person.age} </li>
+</ul>
+`
+
+document.querySelector(".para").innerHTML = mydata; */
+
+
+//date object
+/* let now = new Date();
+
+console.log(now);
+console.log(now.getDay());
+console.log (now.getTime());
+console.log(now.getMonth());
+console.log(now.getFullYear());
+console.log(now.getHours());
+console.log(now.getMinutes());
+console.log(now.getSeconds());
+console.log(now.getDate()) */
+
+// sort method 
+/* let number = [12, 23, 1, 2, 53,32,4,5,7,8,15];
+
+let ans = (x,y) => {
+   return x-y;
+}
+
+number.sort(ans);
+console.log(number); */
+
+
+// find method
+/*  let number = [12, 23, 1, 2, 53,32,4,5,7,8,15];
+
+ let result = number.find((num) => {
+   return num >16;
+ })
+   console.log(result); */
+// array methods
+/* et number = [12, 3 ,4 ,5 ,6, 7];
+
+let number2 = [8,9,0,1,21,31,3,24];
+
+let result = number .concat(number2);
+
+let result2 = [...number, ...number2];
+
+console.log(result);
+console.log(result2); */
+
+//window object
+
+/* indow.alert("do not use");
+
+window.prompt("Enter your name: ");
+
+window.confirm("Are you sure you want to delete this item?"); */
+/* let con = window.confirm("Are you over 18 years old?");
+
+let answer = con ? " You are over 18 years old" : "You are not over 18 years old";
+
+document.querySelector(".head").innerHTML = answer; */
+
+/* document.querySelector(".head").innerHTML = window.innerHeight;
+
+
+/* window.location.href = "document.html"; */
+
+/*document.querySelector(".butt").addEventListener("click",    function(){
+   window.location.href = "document.html";
+})
+ */
+
